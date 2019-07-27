@@ -1,0 +1,10 @@
+>>> list1, list2 = [123, 'xyz'], [456, 'abc']
+>>> cmp(list1, list2)
+-1
+>>> cmp(list2, list1)
+1
+>>> list3 = list2 + [789]
+>>> list3
+[456, 'abc', 789]
+>>> cmp(list1, list3)
+-1

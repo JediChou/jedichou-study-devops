@@ -1,0 +1,17 @@
+## File name : CorePy_6.13.2_EnumerateZip.txt
+## emuerate() and zip()
+>>> albums = ['tables', 'robot', 'pyramid']
+>>> for i, album in enumerate(albums):
+...		print i, album
+...
+0 tables
+1 robot
+2 pyramid
+>>>
+>>> fn = ['ian', 'stuart', 'david']
+>>> ln = ['bairson', 'elliott', 'paton']
+>>>
+>>> for i, j in zip(fn, ln):
+...		print ('%s %s' % (i, j)).title(),
+...
+Ian Bairson Stuart Elliott David Paton

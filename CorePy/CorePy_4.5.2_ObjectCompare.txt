@@ -1,0 +1,30 @@
+## File name : CorePy_4.5.2_ObjectCompare.txt
+## a is b ==> id(a) == id(b)
+>>> a = [5, 'hat', -9.3]
+>>> b = a
+>>> a is b
+True
+>>> a is not b
+False
+>>>
+>>> ## Under Python 2.6.6 (r266:84297) value of b will change.
+>>> ## Under Python 3.1.2 (r312:79149) value same as input.
+>>> b = 2.5e-5
+>>> b
+2.5000000000000001e-05
+>>> a
+[5, 'hat', -9.3000000000000007]
+>>> a is b
+False
+>>> a is not b
+True
+>>>
+>>>
+>>> a = 1
+>>> b = 1
+>>> id(a) == id(b)
+True
+>>> c = 1.0
+>>> d = 1.0
+>>> id(c) == id(d) ## Python only caches int type. Importance!!!
+False

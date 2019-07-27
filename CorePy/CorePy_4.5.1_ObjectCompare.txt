@@ -1,0 +1,24 @@
+## File name : CorePy_4.5.1_ObjectCompare.txt
+>>> 2 == 2
+True
+>>> 2.46 <= 8.33
+True
+>>> 5+4j >= 2-3j
+Traceback (most recent call last):
+TypeError: no ordering relation is defined for complex numbers
+>>> 'abc' == 'xyz'
+False
+>>> 'abc' > 'xyz'
+False
+>>> 'abc' < 'xyz'
+True
+>>> [3, 'abc'] == ['abc', 3]
+False
+>>> [3, 'abc'] == [3, 'abc']
+True
+>>> 3 < 4 < 7 # same as (3 < 4) and (4 < 7)
+True
+>>> 4 > 3 == 3 # same as (4 > 3) and (3 == 3)
+True
+>>> 4 < 3 < 5 != 2 < 7
+False

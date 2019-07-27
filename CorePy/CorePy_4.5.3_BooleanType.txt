@@ -1,0 +1,12 @@
+## File name : CorePy_4.5.3_BooleanType.txt
+>>> x, y = 3.1415926536, -1024
+>>> x < 5.0
+True
+>>> not (x < 5.0)
+False
+>>> (x < 5.0) or ( y > 2.718281828)
+True
+>>> (x < 5.0) and (y > 2.718281828)
+False
+>>> not (x is y)
+True

@@ -1,0 +1,4 @@
+this is a test for list0702.ps1
+jedi is a high level test engineer
+becky
+cici

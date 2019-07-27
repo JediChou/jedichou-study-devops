@@ -1,0 +1,9 @@
+## File name : CorePy_4.6.1_type.txt
+>>> type(4)  # int type
+<type 'int'>
+>>>
+>>> type('Hello World!')  # string type
+<type 'str'>
+>>>
+>>> type(type(4))  # type type
+<type 'type'>

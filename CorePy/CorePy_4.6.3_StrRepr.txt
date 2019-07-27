@@ -1,0 +1,25 @@
+## File name : CorePy_4.6.3_StrRepr.txt
+>>> str(4.53-2j)
+'(4.53-2j)'
+>>>
+>>> str(1)
+'1'
+>>>
+>>> str(2e10)
+'20000000000.0'
+>>>
+>>> str([0, 5, 9, 9])
+'[0, 5, 9, 9]'
+>>>
+>>> repr([0, 5, 9, 9])
+'[0, 5, 9, 9]'
+>>>
+>>> '[0, 5, 9, 9]'
+'[0, 5, 9, 9]'
+>>>
+>>> eval('type(type)')
+<type 'type'>
+>>>
+>>> eval('type(type))')
+Traceback (most recent call last):
+SyntaxError: unexpected EOF while parsing

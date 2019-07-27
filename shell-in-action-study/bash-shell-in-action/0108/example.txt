@@ -1,0 +1,9 @@
+tput cols
+tput lines
+tput longname
+tput cup 100 100
+tput setb number (0-7)
+tput serf number (0-7)
+tput smul
+tput rmul
+tput ed

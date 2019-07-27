@@ -1,0 +1,3 @@
+$ alias new_command='command sequence'
+$ alias install='sudo apt-get install'
+$ echo 'alias cmd="command seq"' >> ~/.bashsrc

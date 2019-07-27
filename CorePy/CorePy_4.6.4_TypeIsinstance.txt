@@ -1,0 +1,41 @@
+## File name : CorePy_4.6.4_TypeIsinstance.txt
+>>> type(' ')
+<type 'str'>
+>>>
+>>> s = 'xyz'
+>>> type(s)
+<type 'str'>
+>>>
+>>> type(100)
+<type 'int'>
+>>> type(0+0j)
+<type 'complex'>
+>>> type(0L)
+<type 'long'>
+>>> type(0.0)
+<type 'float'>
+>>>
+>>> type([])
+<type 'list'>
+>>> type(())
+<type 'tuple'>
+>>> type({})
+<type 'dict'>
+>>> type(type)
+<type 'type'>
+>>>
+>>> class Foo: pass # new-style class
+...
+>>> foo = Foo()
+>>> class Bar(object): pass # new-style class
+...
+>>> bar = Bar()
+>>> type(Foo)
+<type 'classobj'>
+>>> type(foo)
+<type 'instance'>
+>>> type(Bar)
+<type 'type'>
+>>> type(bar)
+<class '__main__.Bar'>
+

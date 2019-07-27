@@ -1,0 +1,23 @@
+>>> aList = ['ammonia', 83, 85, 'lady']
+>>> aList
+['ammonia', 83, 85, 'lady']
+>>>
+>>> aList[2]
+85
+>>>
+>>> temp1 = id(aList)
+>>>
+>>> aList[2] = aList[2] + 1
+>>> aList[3] = 'stereo'
+>>> aList
+['ammonia', 83, 86, 'stereo']
+>>>
+>>> temp2 = id(aList)
+>>>
+>>> aList.append('gaudy')
+>>> aList.append(aList[2] + 1)
+>>> aList
+['ammonia', 83, 86, 'stereo', 'gaudy', 87]
+>>> temp3 = id(aList)
+>>> temp1 == temp2 == temp3
+True

@@ -1,0 +1,15 @@
+## File name: CorePy_6.13.2_ListTuple.txt
+## list() and tuple()
+>>> aList = ['tao', 93, 99, 'time']
+>>> aTuple = tuple(aList)
+>>> aList, aTuple
+(['tao', 93, 99, 'time'], ('tao', 93, 99, 'time'))
+>>> aList == aTuple
+False
+>>> anotherlist = list(aTuple)
+>>> aList == anotherlist
+True
+>>> aList is anotherlist
+False
+>>> [id(x) for x in aList, aTuple, anotherlist]
+[15331240, 15731040, 15742256]

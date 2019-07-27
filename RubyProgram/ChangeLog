@@ -1,0 +1,6 @@
+Fir Aug 25 17:15:17 2006 Yukihiro Matsumoto <matz@ruby-lang.org>
+	* stable version 1.8.2 released.
+Tue Aug 22 18:47:51 2006 Yukihiro Matsumoto <matz@ruby-lang.org>
+	* lib/rdoc/parsers/parse_c.rb (RDoc::C_Parser::handle_method):
+	  rdoc documents C module methods as instance methods. a patch in
+	  [ruby-core:08536].

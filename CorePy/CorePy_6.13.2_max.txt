@@ -1,0 +1,10 @@
+>>> str_list = ['a', 'b', 'c', 'd', 'e']
+>>> num_list = [100, 200, 300, 400, 500]
+>>> max(str_list)
+'e'
+>>> max(num_list)
+500
+>>> min(str_list)
+'a'
+>>> min(num_list)
+100

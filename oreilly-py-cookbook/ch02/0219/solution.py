@@ -1,0 +1,23 @@
+# coding: utf-8
+
+import glob, os
+
+def all_files(pattern, search_path, pathsep = os.pathsep):
+	""" 给定搜索路径, 找出所有满足匹配条件的文件 """
+	for path in search_path.split(pathsep):
+		for match in glob.glob(os.path.join(path, pattern)):
+			yield match
+
+if __name__ == "__main__":
+	
+	# 检查参数
+	import sys
+	if len(sys.argv) != 2 or sys.argv[1].startswith('-'):
+		print 'Use: %s <pattern' % sys.argv[0]
+		sys.exit(1)
+	
+	# 执行操作
+	matches = list(all_files(sys.argv[1], os.environ['PATH']))
+	print '%d match:' % len(matches)
+	for match in matches:
+		print match

@@ -1,0 +1,6 @@
+## File name : CorePy_4.3.1_type.txt
+>>> type(42)
+<type 'int'>
+>>>
+>>> type(type(42))
+<type 'type'>

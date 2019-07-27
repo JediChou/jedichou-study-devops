@@ -1,0 +1,51 @@
+## File name: CorePy_6.14.1_InsertAppend.txt
+## insert() and append()
+## Run with Python 2.6.6 (r266:84297, Aug 24 2010, 18:46:32)
+>>> music_media = [45]
+>>> music_media
+[45]
+>>> music_media.insert(0, 'compact disc')
+>>> music_media
+['compact disc', 45]
+>>>
+>>> music_media.append('long playing record')
+>>> music_media
+['compact disc', 45, 'long playing record']
+>>>
+>>> music_media.insert(2, '8-track tape')
+>>> music_media
+['compact disc', 45, '8-track tape', 'long playing record']
+>>>
+>>> 'cassette' in music_media
+False
+>>> 'compact disc' in music_media
+True
+>>> music_media.index(45)
+1
+>>> music_media.index('8-track tape')
+2
+>>>
+>>> music_media.index('cassette')
+Traceback (most recent call last):
+ValueError: list.index(x): x not in list
+>>>
+>>> for eachMediaType in (45, '8-track tape', 'cassette'):
+...		if eachMediaType in music_media:
+...			print music_media.index(eachMediaType)
+...
+1
+2
+>>> music_media
+['compact disc', 45, '8-track tape', 'long playing record']
+>>> music_media.sort()
+>>> music_media
+[45, '8-track tape', 'compact disc', 'long playing record']
+>>> music_media.reverse()
+>>> music_media
+['long playing record', 'compact disc', '8-track tape', 45]
+>>>
+>>> new_media = ['24/96 digital audio disc', 'DVD Audio disc', 'Super Audio CD']
+>>> music_media.extend(new_media)
+>>> music_media
+['long playing record', 'compact disc', '8-track tape', 45, '24/96 digital audio disc', 'DVD Audio disc', 'Super Audio CD']
+>>> # There have a funny lab at the page 221 bottom.

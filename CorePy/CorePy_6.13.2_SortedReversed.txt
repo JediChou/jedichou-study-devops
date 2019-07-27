@@ -1,0 +1,7 @@
+>>> s = ['They', 'stamp', 'them', 'when', "they're", 'small']
+>>> for t in reversed(s):
+...		print t,
+...
+small they're when them stamp They
+>>> sorted(s)
+['They', 'small', 'stamp', 'them', "they're", 'when']

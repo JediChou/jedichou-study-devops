@@ -1,0 +1,14 @@
+## File name: CorePy_6.13.2_sum.txt
+## sum()
+>>> import operator
+>>> a = [6, 4, 5]
+>>> reduce(operator.add, a)
+15
+>>> sum(a)
+15
+
+>>> sum(a, 5)
+20
+>>> a = [6., 4., 5.]
+>>> sum(a)
+15.0

@@ -1,0 +1,4 @@
+function Prompt
+{
+  "PS-Jedi: > "
+}

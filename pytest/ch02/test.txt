@@ -1,0 +1,70 @@
+## Time for action - creating and running your first doctest.
+##  This is a simple doctet tat checks some
+##  of Python's arithmetic operation.
+>>> 2 + 2
+4
+>>> 3 * 3
+9
+>>>
+>>> ## Time for action - writing a more complex test
+>>> ##   Now we're going to take some more of
+>>> ##   doctest's syntax for spin.
+>>> import sys
+>>> def test_write():
+...		sys.stdout.write("Hello\n")
+...		return True
+>>> test_write()
+Hello
+True
+>>>
+>>> ## Time for action - expecting an exception
+>>> ##  Here use doctest's exception syntax to check
+>>> ##  that Python is correctly enforcing its grammer.
+>>> def faulty():
+...		yield 5
+...		return 7
+Traceback (most recent call last):
+SyntaxError: 'return' with argument inside generator (<doctest test.txt[5]>, line 3)
+>>>
+>>> ## Time for action - using ellipsis in tests
+>>> ##   Page 33 of PDF
+>>> ##   We'll use the ellipsis in a few different tests,
+>>> ##   to get a better feel for what it does and how
+>>> ##   to use it.
+>>> 'This is an expression that evaluates to a string'
+... # doctest: +ELLIPSIS
+'This is ... a string'
+>>> import datetime
+>>> datetime.datetime.now().isoformat()
+... # doctest: +ELLIPSIS
+'...-...-...T...:...:...'
+>>>
+>>> ## Time for action - normalizing whitespace
+>>> ##   page 19 of PDF
+>>> ##   we'll write a couple tests that demostrate how
+>>> ##   whitespace normalization works.
+>>> [1, 2, 3, 4, 5, 6, 7, 8, 9]
+... # doctest: +NORMALIZE_WHITESPACE
+[1, 2, 3,
+ 4, 5, 6,
+ 7, 8, 9]
+>>> sys.stdout.write("This text\n contains weird    spacing.")
+... # doctest: +NORMALIZE_WHITESPACE
+This text contains weird spacing.
+>>>
+>>> ## Time for action - skipping tests
+>>> ##   page 35 of PDF
+>>> ##   This is an example of how to skip a test:
+>>> "This test would fail."
+... # doctest: +SKIP
+If it were allowed to run.
+>>>
+>>> ## Other decotest directives
+>>> ## Fully documented at http://docs.python.org/library/doctest.html#option-flags-and-directives
+>>> ##   -> +DONT_ACCEPT_TRUE_FOR_1
+>>> ##   -> +DONT_ACCEPT_BLANKLINE
+>>> ##   -> +IGNORE_EXCEPTION_DETAIL
+>>> ##   -> +REPORT_UDIFF
+>>> ##   -> +REPORT_CDIFF
+>>> ##   -> +REPORT_NDIFF
+>>> ##   -> +REPORT_ONLY_FIRST_FAILURE

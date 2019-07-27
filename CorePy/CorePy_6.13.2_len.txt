@@ -1,0 +1,5 @@
+>>> num_list = ['a', 'b', 'c', 'd']
+>>> len(num_list)
+4
+>>> len(num_list * 2)
+8

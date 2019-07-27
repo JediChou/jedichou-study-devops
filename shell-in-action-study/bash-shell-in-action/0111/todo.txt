@@ -1,0 +1,7 @@
+1. 递归函数没弄懂
+2. 导出函数还没有实例
+4. 向命令传递参数没有实例
+  4.1 $ command -p -v -k 1 file
+  4.2 $ command -pv -k 1 file
+  4.3 $ command -vpk 1 file
+  4.4 $ command file -pvk 1

@@ -1,0 +1,18 @@
+## File name : CorePy_4.6.2_cmp.txt
+>>> a, b = -4, 12
+>>> cmp(a, b)
+-1
+>>> cmp(b, a)
+1
+>>> b = -4
+>>> cmp(a, b)
+0
+>>>
+>>> a, b = 'abc', 'xyz'
+>>> cmp(a, b)
+-1
+>>> cmp(b, a)
+1
+>>> b = 'abc'
+>>> cmp(a, b)
+0
