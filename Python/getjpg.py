@@ -30,4 +30,3 @@ if __name__ == "__main__":
             urllib.urlretrieve(img, 'd://abc//%s.jpg' % x)
             x += 1
             print img
-
