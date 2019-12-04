@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import codecs, sys
 old = sys.stdout
 char = u"\N{LATIN SMALL LETTER A WITH DIAERESIS}"

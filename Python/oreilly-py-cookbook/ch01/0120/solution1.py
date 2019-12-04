@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 german_ae = unicode('\xc3\xa4', 'utf8')
 sentence = "This is a " + german_ae
 sentence2 = "Easy!"

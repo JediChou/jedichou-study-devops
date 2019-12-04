@@ -16,4 +16,3 @@ plainstring4 = unicode(utf16string, "utf-16"); print plainstring4
 
 # 作一个简单的断言
 assert plainstring1 == plainstring2 == plainstring3 == plainstring4
-

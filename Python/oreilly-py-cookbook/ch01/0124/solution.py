@@ -6,6 +6,7 @@ class iStr(str):
     行为方式类似于str, 只是所有的比较和查询
     都是大小写不敏感的
     """
+    
     def __init__(self, *args):
         self._lowered = str.lower(self)
     
@@ -20,7 +21,9 @@ class iStr(str):
         
 def _make_case_insensitive(name):
     '''将str的方法封装成iStr的方法, 大小写不敏感'''
+    
     str_meth = getattr(str, name)
+    
     def x(self, other, *args):
         '''先尝试将other小写化，通常这应该是一个字符串，
            但必须要做好准备对这个过程中出现的错误，
@@ -34,6 +37,7 @@ def _make_case_insensitive(name):
 # 将_make_case_insensitive函数应用于指定的方法
 for name in 'eq lt le gt gt ne contains'.split():
     _make_case_insensitive('__%s__' % name)
+
 for name in 'count endswith find index rfind rindex startswith'.split():
     _make_case_insensitive(name)
     

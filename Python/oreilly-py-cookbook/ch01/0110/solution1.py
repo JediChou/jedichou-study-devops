@@ -5,15 +5,18 @@ import string
 # Make a reusable string of all characters, which does double duty
 # as a translation tale specifying "no translation whatoever"
 allchars = string.maketrans('', '')
+
 def makefilter(keep):
 	"""
-	   Return a function that takes a string and returns a partial
-	   copy of that string consisting of only the characters in
-	   'keep'. Note that `keep' must be a plain string.
+	Return a function that takes a string and returns a partial
+	copy of that string consisting of only the characters in
+	'keep'. Note that `keep' must be a plain string.
 	"""
+	
 	# Make a string of all characters that are not in 'keep': that "set
 	# complement" of keep, meaning the string of characters we must delete
 	delchars = allchars.translate(allchars, keep)
+	
 	# Make and return the desired filtering function (as a closure)
 	def thefilter(s):
 		return s.translate(allchars, delchars)
