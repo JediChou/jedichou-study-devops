@@ -1,1 +1,0 @@
-Set Svc = GetObject ("winmgmts:root\default")
