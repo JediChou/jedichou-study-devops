@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-'''
-把小字符串合并成大字符串
-'''
+
 import operator
 
 pieces = "jfidhijf  ddjifdhih dhfidhfi  dhfidhidfhidh"

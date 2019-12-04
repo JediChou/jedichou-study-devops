@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-#使用sets.Set,获得字符串的所有字符的集合
 
 import sets
 magic_chars = sets.Set('abracadabra')

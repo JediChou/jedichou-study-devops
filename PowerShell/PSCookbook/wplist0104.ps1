@@ -1,4 +1,4 @@
-﻿# Author: Jedi Chou
+# Author: Jedi Chou
 # Date: 2016-7-4 19:45 PM
 # Reference: Windows PowerShell应用手册.pdf, Page 51
 # Description

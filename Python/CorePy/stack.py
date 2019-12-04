@@ -23,4 +23,3 @@ CMDs = {'u':pushit, 'o':popit, 'v':viewstack}
 def showmenu():
 	pr = """
 	p(U)sh
-	

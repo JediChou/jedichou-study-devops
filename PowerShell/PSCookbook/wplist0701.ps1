@@ -1,15 +1,15 @@
-# ¤å¥ó¦W: wplist0701.ps1
-# §@ªÌ: Jedi
-# ¤é´Á: 2016.8.11 10:33 AM
-# ¨Ó·½:¡mWindows PowershellÀ³¥Î¤â¥U¡n, P143
+# ï¿½ï¿½ï¿½W: wplist0701.ps1
+# ï¿½@ï¿½ï¿½: Jedi
+# ï¿½ï¿½ï¿½: 2016.8.11 10:33 AM
+# ï¿½Ó·ï¿½:ï¿½mWindows Powershellï¿½ï¿½ï¿½Î¤ï¿½Uï¿½n, P143
 
-# ¥ÎGet-Content¨ÓÀò±o¤å¥ó¤º®e
+# ï¿½ï¿½Get-Contentï¿½ï¿½ï¿½ï¿½oï¿½ï¿½ó¤º®e
 $content = Get-Content wplist0701.ps1
 
-# ³o¬OGet-Contentªº¥t¥~¤@ºØ¼gªk
+# ï¿½oï¿½OGet-Contentï¿½ï¿½ï¿½tï¿½~ï¿½@ï¿½Ø¼gï¿½k
 $content = ${wplist0701.ps1}
 
-# ¥ÎSystem.IO.FileªºÀRºA¤èªk¨Ó½Õ¥Î
+# ï¿½ï¿½System.IO.Fileï¿½ï¿½ï¿½Rï¿½Aï¿½ï¿½kï¿½Ó½Õ¥ï¿½
 $content = [System.IO.File]::ReadAllText("D:\temp\codelab\ps-cookbook\wplist0701.ps1")
 
 Write-Host $content
