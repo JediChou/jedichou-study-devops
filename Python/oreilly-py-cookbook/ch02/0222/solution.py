@@ -44,4 +44,3 @@ if __name__ == '__main__':
     test('a/b/c/d', '/a/b/c1/d1/', '/')
     test('a/b/c/d', '/a/b/c/d/', '/')
     test('c:/x/y/z', 'd:/x/y/z', '/')
-    

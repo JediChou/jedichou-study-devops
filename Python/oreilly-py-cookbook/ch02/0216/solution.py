@@ -2,7 +2,6 @@
 import os, fnmatch
 
 def all_files(root, patterns='*', single_level=False, yield_folders=False):
-	# 将模式从字符串中取出放入列表中
 	patterns = patterns.split(';')
 	for path, subdirs, files in os.walk(root):
 		if yield_folders:

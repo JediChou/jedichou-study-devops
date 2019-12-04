@@ -6,7 +6,6 @@ if __name__ == "__main__":
 	"""
 		Ref : https://docs.python.org/2/library/stringio.html
 		Desc: cStringIO-Faster version of StringIO
-		Jedi: cStringIO应该是用C重写了StringIO, 速度更快
 	"""
 
 	output = cStringIO.StringIO()

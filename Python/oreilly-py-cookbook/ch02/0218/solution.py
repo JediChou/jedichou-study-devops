@@ -3,7 +3,6 @@
 import os
 
 def search_file(filename, search_path, pathsep=os.pathsep):
-	""" 给定一个搜索路径, 根据请求的名字查找文件 """
 	for path in search_path.split(pathsep):
 		candidate = os.path.join(path, filename)
 		if os.path.isfile(candidate):
