@@ -16,10 +16,10 @@ https://gallery.technet.microsoft.com/scriptcenter/Get-SQLInstance-9a3245a0
 #>
 
 $server = $env:computername  
-$object = Get-WmiObject win32_service -ComputerName $server | where {($_.name -like "MSSQL$*" -or $_.name -like "MSSQLSERVER" -or $_.name -like "SQL Server (*") -and $_.name -notlike "*helper*" -and $_.name -notlike "*Launcher*"}
+$object = Get-WmiObject win32_service -ComputerName $server | Where-Object {($_.name -like "MSSQL$*" -or $_.name -like "MSSQLSERVER" -or $_.name -like "SQL Server (*") -and $_.name -notlike "*helper*" -and $_.name -notlike "*Launcher*"}
 if ($object)
 {
-    $instInfo= $object |select Name,StartMode,State, Status
+    $instInfo= $object |Select-Object Name,StartMode,State, Status
     $instInfo
 }else
 {
