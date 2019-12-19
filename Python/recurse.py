@@ -1,4 +1,9 @@
+# coding: utf-8
+
 def binary_search(seq, num, low=0, upper=None):
+
+    """二分法搜索示例"""
+
     if upper is None: upper = len(seq)-1
     if low > upper:
         assert num == seq[upper]
@@ -12,8 +17,14 @@ def binary_search(seq, num, low=0, upper=None):
         else:
             return binary_search(seq, num, low, mid)
 
-seq_target = [25, 34, 56, 12, 3]
-seq_target.sort()
-print(seq_target)
-b = binary_search(seq_target, 34)
-print(b)
+
+if __name__ == "__main__":
+    
+    # 创建一个list, 用内置方法排序后输出
+    seq = [25, 34, 56, 12, 3, 99, 88]
+    seq.sort()
+    print(seq)
+
+    # 通过自定义方法查找目标数字的下标, 并打印
+    b = binary_search(seq, 34)
+    print(b)
