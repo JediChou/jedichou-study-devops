@@ -1,17 +1,19 @@
-# find 21978 * 4 = 87912
+# coding: utf-8
 
-nums = range(10000, 100001)
+if __name__ == "__main__":
 
-def GetExpectedResult(number):
-    return num * 4
+    """find 21978 * 4 = 87912"""
 
-def GetMulti4Result(number):
-    temp = str(number)[::-1]
-    return int(temp)
+    nums = range(10000, 50000)
 
-for num in nums:
-    result1 = GetMulti4Result(num)
-    result2 = GetExpectedResult(num)
-    if (result1 == result2):
-        print num, num * 4
-    
+    def GetExpectedResult(n):
+        return n * 4
+
+    def GetMulti4Result(n):
+        return int(str(n)[::-1])
+
+    for n in nums:
+        result1 = GetMulti4Result(n)
+        result2 = GetExpectedResult(n)
+        if (result1 == result2):
+            print(n, n * 4)
