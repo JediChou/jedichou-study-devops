@@ -24,4 +24,4 @@ def combinations(iterable, r):
 
 if __name__ == "__main__":
 	for elt in combinations('ABCDEFGHI', 3):
-		print elt, type(elt)
+		print (elt, type(elt))
